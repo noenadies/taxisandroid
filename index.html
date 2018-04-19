@@ -32,7 +32,7 @@ vid=document.getElementById("idid").value;
 vnp=document.getElementById("idnp").value;
 vnh=document.getElementById("idnh").value;
 vmsn=document.getElementById("idmsn").value;
-alert(vid+"  "+vnp+"  "+vnh+ "   "+vmsn);
+//alert(vid+"  "+vnp+"  "+vnh+ "   "+vmsn);
 //alert("aca");
  
 //showAndroidToast(vid,vnp,vnh);
@@ -40,7 +40,7 @@ alert(vid+"  "+vnp+"  "+vnh+ "   "+vmsn);
 		}
 var vreturn="";
    function showAndroidToast(id,st1,st2) {
-       vreturn= Android.showToast(id,st1,st2);
+       vreturn=  window.Android.showToast(id,st1,st2);
  document.getElementById("demo").innerHTML = vreturn;
      //  console.log("andorid  msn  " +vreturn);
     }
